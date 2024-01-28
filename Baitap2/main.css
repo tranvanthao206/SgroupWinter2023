@@ -1,0 +1,128 @@
+html, body {
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.ds-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #FFF;
+    padding: 40px 0px;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+.container{
+    max-width: 720px;
+}
+.ds-header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ds-logo{
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.ds-social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.ds-social li a{
+    border-radius: 100%;
+    color: #FFF;
+    width: 24px;
+    height: 24px;
+    background-color: #F26464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+.ds-social li:first-child{
+    margin-left: 0;
+}
+.ds-logo span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 12px;
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.ds-heading{
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-bottom: 3px solid #F26464;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+.ds-skills-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 11px;
+}
+.ds-skills-list li{
+    display: inline-block;
+    color: #373737;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #FFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 27px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.ds-button{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #F26464;
+    padding: 17px 30px;
+    border: 2px solid #F26464;
+    border-radius: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

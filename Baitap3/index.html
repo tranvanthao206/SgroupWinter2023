@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-caption{
+            color: red;
+            font-size: 40px;
+        }
+        .image-container {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .image-container img {
+          display: block;
+        }
+    
+        .image-container .image-caption {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+    
+        .image-container:hover .image-caption {
+          opacity: 1;
+        }
+      </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://media.hanamtv.vn/upload/image/202309/medium/91079_5126b0ff0b6dba60495f5cc9e6999fc6.jpg" alt="Hình ảnh">
+        <div class="image-caption"> Quê hương Việt Nam </div>
+      </div>
+</body>
+</html>
