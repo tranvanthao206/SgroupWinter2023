@@ -1,40 +1,37 @@
 *{
     box-sizing: border-box;
 }
+body{
+    display: block;
+    font-family: 'Inter', sans-serif;
+}
 .ds-header{
+    background-color: rgb(253, 247, 247);
+    padding:70px 0;
     position: fixed;
-    top: 0;
+    top:0;
     width: 100%;
-    height: 100px;
-    z-index: 5;
-    background-color: #FFF;
-    padding: 70px 0 ;
-    transition-delay: 0s;
-    transition-duration: 0.4s;
-    transition-property: all;
-    transition-timing-function: ease;
 }
 .container{
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0 12px;
 }
 .ds-header-inner{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 50px;
+    align-items: center;
 }
-.ds-logo{
+.ds-logo {
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 18px;
     letter-spacing: 3px;
     color: #000;
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
-.ds-logo span{
+.ds-logo span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,12 +46,14 @@
     margin-right: 12px;
 }
 .ds-social{
+    list-style: none;
     display: flex;
-    padding: 0;
-    margin :40px 5px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.ds-social li{
-    list-style-type: none;
+ul {
+    padding: 0;
+    margin: 0;
 }
 .ds-social li a{
     border-radius: 100%;
@@ -101,23 +100,22 @@ a{
     text-align: center;
     font-size: 16px;
 }
-figure{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+.ds-banner{
+    width: 100%;
 }
 .row{
     display: flex;
-    margin-top: 230px;
-    height: 800px;
 }
 .row1{
-    margin-left: 35px;
+    padding-right: 12px;
+    width: 100%;
 }
 .row2{
-    margin-right: 50px;
+    padding-left: 12px;
+
+}
+figure{
+    margin: 0;
 }
 .ds-banner section h1 span{
     display: block;
@@ -147,14 +145,23 @@ h1{
     font-weight: 800;
 }
 .ds-numbervalulist li{
-    margin-right: 150px;
+    margin-right: 60px;
     margin-top: 15px;
+}
+.ds-banner section {
+    padding-left: 70px;
+    padding-right: 100px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+.ds-numbervalulist span {
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .ds-about-section{
     padding-top: 60px;
     padding-bottom: 120px;
-    margin-left: 60px;
-    margin-right: 50px;
 }
 .ds-heading{
     display: inline-block;
@@ -166,11 +173,10 @@ h1{
     border-bottom: 3px solid #F26464;
     padding-bottom: 7px;
     margin-bottom: 23px;
-    margin-left: 60px;
 }
 .ds-about-section p{
     color: #373737;
-    font-size: 26px;
+    font-size: 16px;
     line-height: 40px;
     font-weight: 250;
     margin-bottom: 60px;
@@ -178,10 +184,10 @@ h1{
 .ds-button{
     display: inline-block;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 13px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: #F26464;
     padding: 17px 30px;
     border: 2px solid #F26464;
@@ -201,8 +207,6 @@ h1{
 .row-skill{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 60px;
-    margin-right: 50px 
 }
 .ds-skills-list{
     list-style: none;
@@ -221,22 +225,20 @@ h1{
 .ds-skills-list li{
     display: inline-block;
     color: #373737;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 20px;
     background-color: #FFF;
     border: 1px solid #D7D7D7;
     border-radius: 27px;
     margin-right: 15px;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .ds-skills-section{
     padding-bottom: 105px;
 }
 .row-ds-experience-list{
     display: flex;
-    margin-left: 60px;
-    margin-right: 50px;
 }
 .ds-year{
     color: #373737;
@@ -257,16 +259,17 @@ h3{
 }
 span.ds-department{
     color: #373737;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     margin-bottom: 50px ;
 }
 .row-ds-experience-list-1 section ul li{
-    font-size: 20px;
+    font-size: 16px;
     color: #2f2c2c;
 }
 .row-ds-experience-list-1 section p{
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 24px;
     color: #2f2c2c;
 }
 .row-ds-experience-list-1.high{
@@ -286,9 +289,12 @@ span.ds-department{
 }
 .row-work1{
     width: 55%;
+    padding: 50px;
 }
 .row-work2{
     width: 45%;
+    margin-top: 35px;
+
 }
 .ds-work-list{
     padding-left: 30px;
@@ -296,8 +302,6 @@ span.ds-department{
     padding-right: 20px;
     background-color: #F6F8FA;
     margin-bottom: 40px;
-    margin-left: 60px;
-    margin-right: 50px;
 }
 .ds-work-tilte{
     color: #000;
@@ -314,4 +318,82 @@ span.ds-department{
 .ds-work-list section {
     padding-right: 60px;
     padding-bottom: 50px;
+}
+@media only screen and (max-width:768px){
+    .name{
+        display:none;
+    }
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row1{
+        width: 100;
+    }
+    .row2{
+        padding: 0;
+    }
+    .ds-banner section{
+        padding: 0;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .ds-banner section h1 span{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .ds-numbervalulist{
+        margin-top: 10px;
+    }
+    .ds-skills-section{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    .ds-about-section{
+        padding-bottom: 30px;
+    }
+    .row-skill-1{
+        width:100%;
+    }
+    .row-ds-experience-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row-ds-experience-list-1.high{
+        margin-left: 0;
+    }
+    .row-work{
+        flex-wrap: wrap;
+    }
+    .row-work1{
+        width: 100%;
+        padding: 0px;
+    }
+    .ds-work-list section {
+        padding-right: 60px;
+        padding-bottom: 0;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:320px) {
+    .name{
+        display: none;
+    }
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ds-numbervalulist strong {
+        
+        font-size: 30px;
+        font-weight: 800;
+    }
 }
